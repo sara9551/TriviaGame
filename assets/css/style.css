@@ -1,0 +1,52 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.text-white {
+    background-color: #afbae8!important;
+}
+
+ul nav.navbar-nav.navbar-right {
+    position: right !important;
+}
+
+.container {
+    position: relative !important;
+    margin: 0 auto !important;
+    width: 960px !important;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+p {
+    line-height: 1.6em;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    padding: 40;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 300%;
+    color: #777777;
+    background-image: url("../midia/Ombre-Color-Wallpaper-20.jpg");
+    background-size: cover;
+    border-color:#dddddd;
+}
+
+hr {
+    color: #666666;
+}
+
+.navbar.navbar-light.bg-light {
+    width: 100%;
+    background-color: #666666 !important;
+    padding: 20px;
+    border-top: 10px solid #afbae8;
+}
+
+h2 {
+    font-size: 24px;
+    color: #afbae8;
+  }
+  
