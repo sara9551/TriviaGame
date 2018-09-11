@@ -1,5 +1,8 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.text-white {
-    background-color: #afbae8!important;
+    width: 100%;
+    background-color: #666666 !important;
+    padding: 20px;
+    border-bottom: 10px solid #afbae8;
 }
 
 ul nav.navbar-nav.navbar-right {
@@ -10,7 +13,7 @@ ul nav.navbar-nav.navbar-right {
     position: relative !important;
     margin: 0 auto !important;
     width: 960px !important;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 20px;
     padding: 20px;
     background-color: #ffffff;
@@ -26,12 +29,13 @@ body {
     padding: 40;
     margin: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 300%;
     color: #777777;
     background-image: url("../midia/Ombre-Color-Wallpaper-20.jpg");
     background-size: cover;
     border-color:#dddddd;
+    text-align: center;
 }
 
 hr {
@@ -48,5 +52,21 @@ hr {
 h2 {
     font-size: 24px;
     color: #afbae8;
+    text-align: center;
   }
-  
+
+  h3 {
+    font-size: 18px;
+    color: #afbae8;
+  }
+
+.jumbotron {
+    opacity: 0.6;
+    background-color: #acceef;
+    font-size: 20px;
+    color: #666666;
+}
+
+.btn {
+    background-color: #666666;
+}

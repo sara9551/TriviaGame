@@ -1,113 +1,56 @@
+$(document).ready(function() {
 
-var questions = [{
-  trivia: "The Hound of the Baskervilles is a crime novel featuring which fictional detective?",
-  answers: ["Hercule Poirot", "Inspector Clouseau", "Sherlock Holmes"],
-  correctAnswer: "Sherlock Holmes",
-}, {
-  trivia: "Which continent is also a country?",
-  answers: ["Brazil", "Africa", "Australia"],
-  correctAnswer: "Australia",
-}, {
-  trivia: "What was the name of the coffee shop in the hit sitcom friends?",
-  answers: ["Central Park", "Central Perks", "Central Perk"],
-  correctAnswer: "Central Perk",
-}, {
-  trivia: "The Roman Catholic church La Sagrada Familia, located in Barcelona Spain, was designed by which Catalan architect?",
-  answers: ["Eero Saarinen", "Antoni Gaudí", "Renzo Piano"],
-  correctAnswer: "Antoni Gaudí",
-}, {
-  trivia: "Who was the last queen of France prior to the French revolution?",
-  answers: ["Catherine de' Medici", "Marie Antoinette", "Margaret of Valois"],
-  correctAnswer: "Marie Antoinette",
-}, {
-  trivia: "Come as You Are, a song by the grunge band Nirvana was released on which album?",
-  answers: ["Smells Like Teen Spirit", "Come as You Are", "Nevermind"],
-  correctAnswer: "Nevermind",
-}, {
-  trivia: "According to legend, Romulus and Remus founded what city?",
-  answers: ["Paris", "Rome", "Prague"],
-  correctAnswer: "Rome",
-}, {
-  trivia: "In the game of chess, how many pawns does each player start with?",
-  answers: ["6", "8", "10"],
-  correctAnswer: "8",
-}, {
-  trivia: "With twelve Oscar nominations and three wins, who is the most nominated male actor in Academy Awards history?",
-  answers: ["Jack Nicholson", "Jeff Bridges", "Sean Penn"],
-  correctAnswer: "Jack Nicholson",
-}, {
-  trivia: "What is the tallest mountain in South America?",
-  answers: ["Aconcagua", "Ojos del Salado", "Huascarán"],
-  correctAnswer: "Aconcagua",
-}, {
-  trivia: "Dendrophobia is the fear of what?",
-  answers: ["Flying", "Trees", "Blushing"],
-  correctAnswer: "Trees",
-}, {
-  trivia: "A Shakespearean sonnet consists of how many lines?",
-  answers: ["16", "15", "14"],
-  correctAnswer: "14",
-}];
+var question1 = $("#question1").val();
+var question2 = $("#question2").val();
+var question3 = $("#question3").val();
+var question4 = $("#question4").val();
+var question5 = $("#question5").val();
+var question6 = $("#question6").val();
+var question7 = $("#question7").val();2
+var question8 = $("#question8").val();
+var question9 = $("#question9").val();
+var win = 0;
 
 
+if (question1 == "Sherlock Holmes") {
+  win++;
+}
+if (question2 == "Australia") {
+  win++;
+}
+if (question3 == "Central Perk") {
+  win++;
+}
+if (question4 == "Nevermind") {
+  win++;
+}
+if (question5 == "Rome") {
+  win++;
+}
+if (question6 == "8") {
+  win++;
+}
+if (question7 == "Jack Nicholso") {
+  win++;
+}
+if (question8 == "Trees") {
+  win++;
+}
+if (question9 == "14") {
+  win++;
+}
 
-var score = 0;
+// $(".btn").on("click", function () {
 
-var questionIndex = 0;
+$("#show-win").html("Your score is " + win);
 
+// });
 
+var number = 59
+var intervalId
 
-  
-function renderQuestion() {
-      
-      if (questionIndex <= (questions.length - 1)) {
-        document.querySelector("#question").innerHTML = questions[questionIndex].q;
-      }
-    
-      else {
-        document.querySelector("#question").innerHTML = "Game Over!";
-        document.querySelector("#score").innerHTML = "Final Score: " + score + " out of " + questions.length;
-      }
-    }
-
-   
-    function updateScore() {
-      document.querySelector("#score").innerHTML = "Score: " + score;
-    }
-
-
-    renderQuestion();
-    updateScore();
-
-    if (questionIndex === questions.length) {
-    }
-
-    if (userInput === "correctAnswer") {
-
-     
-      if (userInput === questions[questionIndex].a) {
-        alert("Correct!");
-        score++;
-        updateScore();
-      }
-      
-      else {
-        alert("Wrong!");
-      }
-
-      questionIndex++;
-      renderQuestion();
-
-    }
-
-
-
-var number = 50;
-
-var intervalId;
-
-function run() {
-  intervalId = setInterval(decrement, 1000);
+function run(){
+  intervalId =setInterval(decrement, 1000);
 }
 
 function decrement() {
@@ -116,7 +59,7 @@ function decrement() {
 
   $("#show-number").html("<h2>" + number + "</h2>");
 
-  if (number === 0) {
+  if (number == 0) {
 
     stop();
 
@@ -130,3 +73,5 @@ function stop() {
 }
 
 run();
+
+});

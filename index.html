@@ -15,7 +15,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-        <span class="navbar-brand mb-1 h1"> Welcome to Trivia Game! </span>
+        <span class="navbar-brand mb-1 h1"> </span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,36 +28,233 @@
     <br>
     <br>
 
+
+    <div class="jumbotron">
+
+        <h1 class="text-center"> Welcome to Trivia Game! </h1>
+
+        <br>
+
+        <div class="text-center">
+
+            <button id="random-button" class="btn btn-primary btn-lg"> <div id="show-number"></div> </button>
+
+            <br>
+            <br>
+
+            <div id="show-win"></div>
+
+        </div>
+
+    </div>
+
     <div class="container">
 
         <h2 class="mt-0">Question</h2>
 
         <hr />
 
-        <div class="form1">
-          <input class="form1" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form1"></label>
+        <h3 class="mt-0">The Hound of the Baskervilles is a crime novel featuring which fictional detective?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question1" name="question1" id="question1" value="option1"
+                    checked>
+                Hercule Poirot
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question1" name="question1" id="question1" value="option2">
+                Inspector Clouseau
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question1" name="question1" id="oquestion1" value="option3">
+                Sherlock Holmes
+            </label>
         </div>
 
-        <div class="form2">
-          <input class="form2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form2"></label>
+
+        <h3 class="mt-0">Which continent is also a country</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question2" name="question2" id="question2" value="option4"
+                    checked>
+                Brazil
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question2" name="question2" id="question2" value="option5">
+                Africa
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question2" name="question2" id="question2" value="option6">
+                Australia
+            </label>
         </div>
 
-        <div class="form3">
-            <input class="form3" type="radio" name="exampleRadios" id="exampleRadios2" value="option3">
-            <label class="form3"></label>  
+
+        <h3 class="mt-0">What was the name of the coffee shop in the hit sitcom friends?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question3" name="question3" id="question3" value="option7"
+                    checked>
+                Central Park
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question3" name="question3" id="question3" value="option8">
+                Central Perks
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question3" name="question3" id="question3" value="option3">
+                Central Perk
+            </label>
         </div>
 
-        <div id="show-number"></div>
 
-        <p id="question"></p>
+        <h3 class="mt-0">Come as You Are, a song by the grunge band Nirvana was released on which album?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question4" name="question4" id="question4" value="option9"
+                    checked>
+                Smells Like Teen Spirit
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question4" name="question4" id="question4" value="option10">
+                Come as You Are
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question4" name="question4" id="question4" value="option11">
+                Nevermind
+            </label>
+        </div>
 
-        <p id="choices"></p>
 
-        <p id="score"></p>
+        <h3 class="mt-0">According to legend, Romulus and Remus founded what city?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question5" name="question5" id="question5" value="option12"
+                    checked>
+                Paris
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question5" name="question5" id="question5" value="option13">
+                Rome
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question5" name="question5" id="question5" value="option14">
+                Prague
+            </label>
+        </div>
 
-        <p id="btn"></p>
+
+        <h3 class="mt-0">In the game of chess, how many pawns does each player start with?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="fquestion6" name="question6" id="question6" value="option15"
+                    checked>
+                6
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question6" name="question6" id="question6" value="option16">
+                8
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question6" name="question6" id="question6" value="option17">
+                10
+            </label>
+        </div>
+
+
+        <h3 class="mt-0">With twelve Oscar nominations and three wins, who is the most nominated male actor in Academy
+            Awards history?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question7" name="question7" id="question7" value="option18"
+                    checked>
+                Jack Nicholson
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question7" name="question7" id="question7" value="option19">
+                Jeff Bridges
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question7" name="question7" id="question7" value="option20">
+                Sean Penn
+            </label>
+        </div>
+
+
+        <h3 class="mt-0">Dendrophobia is the fear of what?</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question8" name="question8s" id="question8" value="option21"
+                    checked>
+                Flying
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question8" name="question8" id="question8" value="option22">
+                Trees
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question8" name="question8" id="question8" value="option23">
+                Blushing
+            </label>
+        </div>
+
+
+        <h3 class="mt-0">A Shakespearean sonnet consists of how many lines??</h3>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question9" name="question9 id="optionsRadios1" value="option24"
+                    checked>
+                16
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="question9" name="question9" id="question9" value="option25">
+                15
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="question9" name="question9" id="question9" value="option26">
+                14
+            </label>
+        </div>
+
+    
+        <input type="button" class="btn" value="CHECK SCORE"/>
+
 
     </div>
 
