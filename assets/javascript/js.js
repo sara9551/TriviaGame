@@ -40,7 +40,7 @@ if (question9 == "14") {
   win++;
 }
 
-// $(".btn").on("click", function () {
+// $(".btn").on("click", function () { --> could not get it to work
 
 $("#show-win").html("Your score is " + win);
 
